@@ -1,0 +1,163 @@
+/*
+    USED NESTING FEATURE OF SCSS PREPROCESSOR FOR HEADER 
+*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'headline follow follow follow follow follow'
+    'headline menu1 menu1 menu1 search search';    
+  grid-gap: 2px;  
+  background-color: $menu-background-color;  
+  padding: 0px;
+
+  div {
+    background-color:$body-color;
+    text-align: center;
+    padding: 0 0;  
+    font-size: 18px;
+  }
+
+  .the{
+    font-size:18px;
+    color:$body-color;
+    /* USED VARIABLES*/
+    font-weight: $heavy;
+    background-color:$text-color;
+    }
+
+    .date{
+      font-weight: $heavy;
+      font-size:18px;
+      color:white;
+      background-color: $date-background-color;
+      margin-right: -120px;
+      width: 200px;
+      }
+
+      .news{
+        font-weight: $heavy;
+        
+        font-size:40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:$text-color;
+        width: 40%;
+        }
+
+        .protal{
+          width: 60px;
+          font-weight: $heavy;
+        font-size:40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:$date-background-color;
+        }
+
+        .facebook{
+          color:blue;
+          font-weight: $heavy;
+          padding-right:10px;
+          
+          }
+
+          .youtube{
+            border-left: 1px solid;
+            color:$date-background-color;
+            font-weight: $heavy;
+            padding-left:10px;
+            padding-right:10px;
+            
+            }
+            .instagram{
+            border-left: 1px solid;
+            color:$insta_color;
+            font-weight: $heavy;
+            padding-left:10px;
+            }
+
+            .follow1{
+              float:right;
+              }
+              ul {
+                list-style-type: none;
+                margin: 0px;  
+                padding: 0px;
+                overflow: hidden;
+                background-color:$body-color;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color:$text-color;
+                text-align: center;
+                padding: 16px 16px 16px;
+                margin-left: 20px;
+                text-decoration: none;
+                font-weight: $heavy;
+                
+              }
+              
+              li a:hover {
+                background-color: $hover-color;
+              } 
+}
+
+/*
+    END OF NESTING FEATURE OF SCSS PREPROCESSOR FOR HEADER 
+*/
+
+
+
+
+/* FOOTER SECTION */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: absolute;
+    margin-left: -850px;
+    margin-bottom: -77%;
+    bottom: 0;
+    width: 70%;
+  
+    
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;  
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 100px;
+  }
+  
+  .navbar a:hover {
+    background: beige;
+    color: black;
+  }
+  
+  .copyright{
+    color: white;
+    margin-left: 150px;
+  }
+  
+  .grid-add-container footer{
+    background: #6DB3F2  url('images/footer.png');    
+    @extend %image_default;
+  
+  }
+  
+  .footer{
+    width:100px;
+    margin-right: 25em;
+    margin-left: 10em;
+    clear: both;
+  }
+  
+  /* END OF FOOTER SECTION */
+  
